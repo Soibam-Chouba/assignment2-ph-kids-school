@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* shared styles */
+.btn-typ1{
+    color: white;
+    font-family: "Quicksand", serif;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: orange;
+    padding: 10px 60.5px;
+    border: none;
+    border-radius: 12px;
+}
+.btn-typ1:hover{
+    color: orange;
+    font-family: "Quicksand", serif;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: white;
+    padding: 10px 60.5px;
+    border: 2px solid orange;
+    border-radius: 12px;
+}
+/* header styles start */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 140px;
+}
+.logo-brand-name{
+    display: flex;
+    align-items: center;
+}
+.brand{
+    margin-left: 11px;
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+}
+.nav-items{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav-link:hover{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgba(254, 153, 117, 0.158);
+    padding: 10px;
+    border-radius: 5px;
+}
+#nav-link1{
+    margin-right: 32px;
+    color: orange;
+}
+#nav-link2{
+    margin-right: 32px;
+    color: skyblue;
+}
+#nav-link3{
+    margin-right: 32px;
+    color: rgba(5, 212, 223, 1);
+}
+#nav-link4{
+    color: rgba(93, 88, 239, 1);
+}
+.nav-menu-bar{
+    display: none;
+}
+#menu{
+    font-size: 32px;
+}
+/* header styles close */
+
+/* media query */
+@media screen and (max-width: 576px) {
+    .navbar{
+        margin: 0px;
+        padding: 12px 16px;
+        border-bottom: 1px solid orange;
+    }
+    .brand,
+    .nav-links,
+    #nav-btn-typ1{
+        display: none;
+    }
+    .nav-menu-bar{
+       display: block; 
+    }
+}
