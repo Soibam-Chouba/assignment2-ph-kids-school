@@ -32,7 +32,28 @@
     border: 2px solid orange;
     border-radius: 12px;
 }
+.btn-typ2{
+    color: white;
+    background-color: black;
+    font-family: "Quicksand", serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 47px;
+    border: none;
+    border-radius: 12px;
+}
+.btn-typ2:hover{
+    color: black;
+    background-color: white;
+    font-family: "Quicksand", serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 47px;
+    border: 2px solid black;
+    border-radius: 12px;
+}
 /* header styles start */
+/* nav */
 .navbar{
     display: flex;
     align-items: center;
@@ -89,14 +110,38 @@ li{
 #menu{
     font-size: 32px;
 }
+/* banner */
+.banner{
+    display: flex;
+    margin: 0px 141px;
+    column-gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-slogan{
+    margin-right: 50px;
+}
+h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.banner-slogan p{
+    font-size: 20px;
+    margin-bottom: 24px;
+}
 /* header styles close */
 
 /* media query */
 @media screen and (max-width: 576px) {
+    /* navbar */
     .navbar{
         margin: 0px;
         padding: 12px 16px;
         border-bottom: 1px solid orange;
+        /* width: calc(100% - 34px); */
+        width: auto;
+        height: auto;
     }
     .brand,
     .nav-links,
@@ -105,5 +150,26 @@ li{
     }
     .nav-menu-bar{
        display: block; 
+    }
+    /* banner */
+    .banner{
+        flex-direction: column-reverse;
+        margin: 8px 16px;
+       
+        column-gap: 0px;
+        width: 90%;
+    }
+    /* .banner-img{ 
+        justify-content: center;
+        height: 100%;
+        width: calc(100% - 50px);
+    } */
+    h1{
+        font-size: 32px;
+    }
+    .banner-slogan{
+        width: 100%;
+        text-align: center;
+        margin: 0px;
     }
 }
