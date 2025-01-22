@@ -392,4 +392,27 @@ footer{
     .arrow-btns{
         display: none;
     }
+
+    /* footer query */
+    footer{
+        padding: 60px 12px 60px 21px;
+    }
+    .mom-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .c1-item1{
+        margin-bottom: 22px;
+    }
+    .c1-item2{
+        margin-bottom: 32px;
+    }
+    .container2 h3{
+        margin-bottom: 27px;
+    }
+    .container2{
+        margin-bottom: 32px;
+    }
+    .icons{
+        width: 45%;
+    }
 }
