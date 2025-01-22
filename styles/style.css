@@ -114,7 +114,6 @@ li{
 .banner{
     display: flex;
     margin: 0px 141px;
-    column-gap: 50px;
     align-items: center;
     justify-content: space-between;
 }
@@ -122,8 +121,10 @@ li{
     margin-right: 50px;
 }
 .banner-img{
+    display: flex;
     height: 100%;
     width: 100%;
+    justify-content: end;
 }
 h1{
     font-size: 56px;
@@ -138,6 +139,7 @@ h1{
 
 /* media query */
 @media screen and (max-width: 576px) {
+   
     /* navbar */
     .navbar{
         margin: 0px;
@@ -165,6 +167,7 @@ h1{
     .banner-img{
         display: flex;
         justify-content: center;
+        width: auto;
     }
     .banner-img> img{
         height: auto;
