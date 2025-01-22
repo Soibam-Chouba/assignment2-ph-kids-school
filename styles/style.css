@@ -176,10 +176,18 @@ main{
     border: 1px solid rgba(242, 232, 255, 1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.card-ms1-img, .card-ms1-info h3, .card-ms1-info p, .card-ms1-info a{
+
+.card-ms1-img, .card-ms1-info h3,
+.card-ms1-info p, .card-ms1-info .hoverc1,
+.card-ms1-info .hoverc2, .card-ms1-info .hoverc3{
     margin-bottom: 32px;
     display: flex;
     justify-content: center;
+    padding: 5px;
+}
+.card-ms1-info .hoverc1, .card-ms1-info .hoverc2, .card-ms1-info .hoverc3 {
+    margin: 60px;
+    width: calc(100% - 120px);
 }
 .card-ms1-info h3{
     text-align: center;
@@ -206,6 +214,24 @@ main{
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
+}
+.hoverc1, .hoverc2, .hoverc3{
+    border-radius: 10px;
+}
+.hoverc1:hover{
+    background-color: rgba(100, 201, 255, 0.274);
+    border-radius: 10px;
+    padding: 10px;
+}
+.hoverc2:hover{
+    background-color: rgba(240, 168, 0, 0.174);
+    border-radius: 10px;
+    padding: 10px;
+}
+.hoverc3:hover{
+    background-color:rgba(136, 0, 255, 0.201);
+    border-radius: 10px;
+    padding: 10px;
 }
 .arrow-btns{
     display: flex;
@@ -260,6 +286,7 @@ main{
         display: flex;
         justify-content: center;
         width: auto;
+        margin: 28px 0px 20px;
     }
     .banner-img> img{
         height: auto;
@@ -272,5 +299,23 @@ main{
         width: 100%;
         text-align: center;
         margin: 0px;
+    }
+    /* standard curriculum */
+    .standard-curriculum{
+        padding: 40px 16px;
+    }
+    .standard-curriculum h2{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .container-ms1{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-ms1{
+        margin-bottom: 12px;
+    }
+    .arrow-btns{
+        display: none;
     }
 }
