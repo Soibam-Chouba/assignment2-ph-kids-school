@@ -121,6 +121,10 @@ li{
 .banner-slogan{
     margin-right: 50px;
 }
+.banner-img{
+    height: 100%;
+    width: 100%;
+}
 h1{
     font-size: 56px;
     font-weight: 700;
@@ -155,15 +159,17 @@ h1{
     .banner{
         flex-direction: column-reverse;
         margin: 8px 16px;
-       
         column-gap: 0px;
-        width: 90%;
+        width: calc(100% - 32px);
     }
-    /* .banner-img{ 
+    .banner-img{
+        display: flex;
         justify-content: center;
-        height: 100%;
+    }
+    .banner-img> img{
+        height: auto;
         width: calc(100% - 50px);
-    } */
+    }
     h1{
         font-size: 32px;
     }
