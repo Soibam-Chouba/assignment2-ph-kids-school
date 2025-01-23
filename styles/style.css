@@ -162,6 +162,10 @@ li{
 #menu{
     font-size: 32px;
 }
+#menu:hover{
+    font-size: 32px;
+    color: orange;
+}
 /* banner */
 .banner{
     display: flex;
@@ -382,9 +386,6 @@ h1{
 }
 /* main styles close */
 /* marquee style */
-.marquee{
-    background-color: aqua;
-}
 marquee{
     display: flex;
     justify-content: center;
@@ -393,9 +394,9 @@ marquee{
     font-family: "Galada", serif;
     font-weight: 400;
     font-style: normal;
-    background: linear-gradient(rgb(163, 227, 254), rgb(255, 255, 255), rgb(163, 227, 254));
+    background: linear-gradient(rgb(163, 227, 254), rgb(255, 255, 255) 70%, rgb(163, 227, 254));
     color: rgb(1, 6, 8);
-    border: 2px solid rgb(200, 238, 255);border-radius: 5px;
+    border: 2px solid rgb(200, 238, 255);
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.301);
 }
